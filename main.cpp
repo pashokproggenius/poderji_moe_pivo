@@ -10,7 +10,9 @@ int main() {
     cout << "Ряд чисел Фибоначчи до " << N << " итераций: ";
 
     for (int i = 1; i <= N; ++i) {
-	cout << a << " ";
+    	if(i & 1) {
+		cout << a << " ";
+	}
 	nextTerm = a + b;
  	a = b;
  	b = nextTerm;
